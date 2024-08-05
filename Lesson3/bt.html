@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        border: 2px solid #8fa7ca;
+        padding: 16px 24px;
+        width: 500px;
+        background: #d9e8fb;
+        margin: auto;
+      }
+
+      p.paragraph {
+        border: 1px solid #a6777d;
+        padding: 20px 12px;
+        background: #f7cecc;
+      }
+
+      button {
+        border-radius: 4px;
+        padding: 8px 18px;
+        color: #ffffff;
+        /* background: #1ba0e1; */
+      }
+
+      button.btn-delete {
+        border: 1px solid #b35183;
+        background: #d90073;
+      }
+
+      button.btn-keep {
+        border: 1px solid #3d87b4;
+        background: #1ba0e1;
+      }
+	  button.btn-delete:hover {
+        border: 1px solid #080808;
+        background: #0c0c0c;
+      }
+
+      button.btn-keep:hover {
+        border: 1px solid #613db4;
+        background: #561be1;
+      }
+
+      .row-button {
+        position: relative;
+      }
+
+      .dialog {
+        background: #b0e3e6;
+        border: 1px solid #39787d;
+        padding: 12px 16px;
+        width: 120px;
+        position: absolute;
+        top: -95px;
+        left: -50px;
+        opacity: 0;
+      }
+
+      .btn-delete:hover ~ .dialog {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p class="paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure ex enim
+        tenetur atque eligendi iusto eius dolor! Odit maxime ut incidunt
+        eligendi autem, repellat voluptatibus qui hic temporibus eius labore.
+      </p>
+
+      <div class="row-button">
+        <button class="btn-delete">Delete</button>
+        <button class="btn-keep">Keep</button>
+        <p class="dialog">Có không giữ, xóa đừng tiếc</p>
+      </div>
+    </div>
+  </body>
+</html>
