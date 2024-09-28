@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login & Register</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="auth-forms">
+      <!-- Form Đăng Nhập -->
+      <div id="login-form" class="form-container active">
+        <h1>Login</h1>
+        <div class="input-group">
+          <label for="email">Email:</label>
+          <input type="text" id="login-email" placeholder="Enter your email" />
+        </div>
+        <div class="input-group">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="login-password"
+            placeholder="Enter your password"
+          />
+        </div>
+        <button id="login-btn">Login</button>
+        <p id="login-message"></p>
+      </div>
+
+      <!-- Form Đăng Ký -->
+      <div id="register-form" class="form-container">
+        <h1>Register</h1>
+        <div class="input-group">
+          <label for="first_name">First Name:</label>
+          <input
+            type="text"
+            id="first_name"
+            placeholder="Enter your first name"
+          />
+        </div>
+        <div class="input-group">
+          <label for="last_name">Last Name:</label>
+          <input
+            type="text"
+            id="last_name"
+            placeholder="Enter your last name"
+          />
+        </div>
+        <div class="input-group">
+          <label for="register-email">Email:</label>
+          <input
+            type="text"
+            id="register-email"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="input-group">
+          <label for="register-password">Password:</label>
+          <input
+            type="password"
+            id="register-password"
+            placeholder="Enter your password"
+          />
+        </div>
+        <button id="register-btn">Register</button>
+        <p id="register-message"></p>
+      </div>
+
+      <!-- Nút Chuyển Đổi Giữa Login và Register -->
+      <div class="button-group">
+        <button id="show-login">Login</button>
+        <button id="show-register">Register</button>
+      </div>
+    </div>
+
+    <!-- Thêm các file JavaScript -->
+    <script src="../users.js"></script>
+    <script src="./scripts.js"></script>
+  </body>
+</html>

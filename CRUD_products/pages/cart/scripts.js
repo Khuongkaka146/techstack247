@@ -54,7 +54,7 @@ function renderCart() {
 	}
 
 	$container_cart.innerHTML = htmlCart;
-	$total_price.innerHTML = `<strong>${formatter.format(totalPrice)} VND</strong>`;
+	$total_price.innerHTML = `<strong>${formatter.format(totalPrice)} </strong>`;
 }
 
 renderCart();

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Posts by User</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1>Search Posts by User</h1>
+      <div class="input-group">
+        <label for="user-email">Enter User Email:</label>
+        <input type="email" id="user-email" placeholder="Enter user email" />
+      </div>
+      <button id="search-posts-btn">Search Posts</button>
+
+      <div class="post-list" id="post-list">
+        <h2>Posts:</h2>
+        <ul id="posts">
+          <!-- Danh sách posts sẽ hiển thị tại đây -->
+        </ul>
+      </div>
+    </div>
+
+    <script src="../users.js"></script>
+    <script src="../posts.js"></script>
+    <script src="./scripts.js"></script>
+  </body>
+</html>
